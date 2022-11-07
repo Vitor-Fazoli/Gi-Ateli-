@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gi Ateliê Costura Criativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/logo.png" alt="logo">
+    </header>
+    <nav>
+        <p>Produtos</p>
+        <p>.</p>
+        <p>Portfolio</p>
+    </nav>
+    <section>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="assets/slide-image1.jpeg" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="assets/slide-image2.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="assets/slide-image3.png" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+    <section class="catalog">
+        <tr>
+            <th>
+                <a href="">
+                    <img class="img-box" src="assets/bolsaVenda.png" alt="">
+                </a>
+            </th>
+            <th>
+                <a href="">
+                    <img class="img-box" src="assets/bolsaVenda.png" alt="">
+                </a>
+            </th>
+        </tr>
+    </section>
+
+    <section class="portfolio">
+        <h2>Acesse já o nosso</h2>
+        <a href="">
+            <h1>Portfolio</h2>
+        </a>
+    </section>
+    <footer>
+        <h5>Redes Sociais</h5>
+        <a href=""><img src="assets/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/atelie.gicampos/"><img src="assets/instagram.png" alt="instagram"></a>
+        <h5>Contato</h5>
+        <p>+55 19 99492-6312</p>
+        <p>gisleneoliveiracampos@hotmail.com</p>
+        <a href="https://www.linkedin.com/in/vitor-hugo-fazoli-da-silva-84776520a/">
+            <h6 class="developer">Desenvolvido por Vitor Fazoli</h6>
+        </a>
+    </footer>
+</body>
+
+</html>

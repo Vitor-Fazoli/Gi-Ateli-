@@ -1,0 +1,188 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    text-align: center;
+    background-image: url("assets/background-header.png");
+    background-position: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav p {
+    display: inline-flex;
+    text-align: center;
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+
+/* The dots/bullets/indicators */
+.dots {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(139, 139, 139);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #2b2b2b;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.catalog {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: black;
+    background-color: white;
+    display: flexbox;
+    flex-direction: row;
+    text-align: center;
+}
+
+.img-box {
+    width: 25%;
+    vertical-align: middle;
+    background-color: rgba(192, 192, 192, 0.3);
+    margin-bottom: 0.5%;
+}
+
+.img-box:hover {
+    background-color: rgba(192, 192, 192, 0.5);
+    transition-duration: 0.2s;
+}
+
+.portfolio {
+    text-align: center;
+    background-image: url("assets/background-portfolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.portfolio h2 {
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.portfolio h1 {
+    font-family: 'Sevillana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 10%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.portfolio a {
+    text-decoration: none;
+}
+
+footer {
+
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+footer img {
+    width: 3%;
+    padding-top: 0%;
+    padding: 10px;
+}
+
+footer img:hover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+footer h5 {
+    font-size: 30px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.developer {
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
